@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
+  ruby-2.5.3
 
-* System dependencies
+* Rails version
+	5.2.3
 
 * Configuration
 
-* Database creation
+ 1. clone Repo.
+ 2. bundle install
+ 3. Setup database
+ 4. Run server
+ 5. run rake task ($ rake football_league:parse)
+ 6. Now vist to localhost:your_port (homepage)
+ 7. vist localhost:your_port/raw (raw file content)
 
-* Database initialization
-
+* Database setup
+	rake db:create
+	rake db:migrate
+	
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+	rails test
 
-* Deployment instructions
+* To Run rake task
 
-* ...
+	rake football_league:parse
+
