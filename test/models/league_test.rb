@@ -17,4 +17,12 @@ class LeagueTest < ActiveSupport::TestCase
     assert_not_nil @league.errors[:team]
   end
 
+  test 'add league' do
+  	# mock = Minitest::Mock.new
+  	# def mock.add; []; end
+  	# League.stub :add, mock do
+  	# 	assert []
+  	# end
+  end
+
 end
