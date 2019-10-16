@@ -35,4 +35,5 @@
 <% if !@leagues.any?%>
   <p> Please exec <b>$rake football_league:parse</b> from terminal to see parsed data.</p>
   <% end %>
+<%= link_to 'View row data', raw_path %>
 </div>
