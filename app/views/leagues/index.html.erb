@@ -1,0 +1,38 @@
+<div class="container">
+<h3>English Premier League 2001/2</h3>
+
+<table class="table table-vertical">
+  <thead>
+    <tr>
+      <th scope="col">Pos</th>
+      <th scope="col">Teams</th>
+      <th scope="col">P</th>
+      <th scope="col">W</th>
+      <th scope="col">D</th>
+      <th scope="col">L</th>
+      <th scope="col">F</th>
+      <th scope="col">A</th>
+      <th scope="col">Pts</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leagues.each do |league| %>
+      <tr bgcolor=<%= (league.team == @smallest_diff_team) ? "#f9f304" : ''%>>
+        <td><%= league.pos %></td>
+        <td><%= league.team %></td>
+        <td><%= league.p %></td>
+        <td><%= league.w %></td>
+        <td><%= league.d %></td>
+        <td><%= league.l %></td>
+        <td><%= league.f %></td>
+        <td><%= league.a %></td>
+        <td><%= league.pts %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% if !@leagues.any?%>
+  <p> Please exec <b>$rake football_league:parse</b> from terminal to see parsed data.</p>
+  <% end %>
+</div>
