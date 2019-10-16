@@ -1,5 +1,9 @@
 class League < ApplicationRecord
 
 	validates :team, presence: true, uniqueness: true
-	
-end 
+
+	def self.add(leagues)
+		create(leagues)
+	end
+
+end

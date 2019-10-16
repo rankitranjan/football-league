@@ -15,7 +15,7 @@ module Parse
 	    end
 	  end
 	  file.close
-	  p rows_arr
+	  League.add(rows_arr)
 	end
 
 	def self.is_valid_row?(row)
