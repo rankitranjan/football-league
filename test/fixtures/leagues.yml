@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+league:
+  pos: 1
+  team: MyString
+  p: 1
+  w: 1
+  d: 1
+  l: 1
+  f: 1
+  a: 1
+  pts: 1
